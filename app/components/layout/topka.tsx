@@ -19,7 +19,7 @@ export default function TopMenu() {
         <div className="hidden md:flex gap-6">
           <Link href="/moneta">Rzut monetą</Link>
           <Link href="/kostka">Kostka</Link>
-          <Link href="/kolo-fortuny">Koło fortuny</Link>
+          <Link href="/lotto">Lotto</Link>
         <Link href="/losowanie">Losowanie liczby</Link>
         </div>
 
