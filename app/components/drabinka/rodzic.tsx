@@ -118,9 +118,9 @@ export default function TournamentBracket() {
   };
 
   return (
-    <div className="p-4 md:p-6 max-w-6xl mx-auto ">
+    <div className="p-4 md:p-6 max-lg:max-w-6xl mx-auto ">
 
-      <h1 className="text-xl md:text-2xl font-bold text-white mb-4">
+      <h1 className="text-xl md:text-2xl font-bold text-white mb-4 max-w-6xl mx-auto">
         Turniej
       </h1>
 
@@ -133,7 +133,7 @@ export default function TournamentBracket() {
       {/* SETUP */}
       {!started && (
         <>
-          <div className="flex gap-2 mb-4 flex-wrap">
+          <div className="flex gap-2 mb-4 flex-wrap  max-w-6xl mx-auto">
             {sizes.map((n) => (
               <button
                 key={n}
@@ -147,7 +147,7 @@ export default function TournamentBracket() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-white mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-white mb-4  max-w-6xl mx-auto">
             {setupTeams.map((t, i) => (
               <input
                 key={i}
@@ -161,7 +161,7 @@ export default function TournamentBracket() {
 
           <button
             onClick={start}
-            className="bg-green-500 text-white px-4 py-2 rounded"
+            className="bg-green-500 text-white px-4 py-2 rounded block mx-auto hover:opacity-50"
           >
             Start turnieju
           </button>

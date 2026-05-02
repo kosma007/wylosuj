@@ -36,10 +36,11 @@ export default function TopMenu() {
       {/* MOBILE MENU */}
       {czyOtwarte && (
         <div className="md:hidden mt-4 flex flex-col gap-3">
-                  <Link href="/moneta">Rzut monetą</Link>
+           <Link href="/moneta">Rzut monetą</Link>
           <Link href="/kostka">Kostka</Link>
-          <Link href="/kolo-fortuny">Koło fortuny</Link>
+          <Link href="/lotto">Lotto</Link>
         <Link href="/losowanie">Losowanie liczby</Link>
+                <Link href="/drabinka">Drabinka drużynowa</Link>
         </div>
       )}
     </nav>

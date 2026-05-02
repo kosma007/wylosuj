@@ -19,10 +19,11 @@ export default function Stopka() {
         <div>
           <h3 className="text-white font-semibold mb-3">Nawigacja</h3>
           <ul className="flex flex-col gap-2 text-sm">
-            <li><Link href="/losowanie-liczby">Losowanie liczby</Link></li>
-            <li><Link href="/kolo-fortuny">Koło fortuny</Link></li>
-            <li><Link href="/tak-nie">Tak / Nie</Link></li>
-            <li><Link href="/rzut-kostka">Rzut kostką</Link></li>
+                      <Link href="/moneta">Rzut monetą</Link>
+          <Link href="/kostka">Kostka</Link>
+          <Link href="/lotto">Lotto</Link>
+        <Link href="/losowanie">Losowanie liczby</Link>
+                <Link href="/drabinka">Drabinka drużynowa</Link>
           </ul>
         </div>
 

@@ -18,7 +18,6 @@ export default function LosowanieLiczb() {
     ustawLoading(true);
     ustawWynik(null);
 
-    // mała animacja „udawania losowania”
     setTimeout(() => {
       const random =
         Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
@@ -29,16 +28,17 @@ export default function LosowanieLiczb() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 mt-10">
+    <div className="w-full flex flex-col items-center mt-20 gap-4 px-4">
 
       {/* INPUTY */}
-      <div className="flex gap-2">
+      <div className="w-full max-w-xs flex flex-col gap-3">
+
         <input
           type="number"
           placeholder="Min"
           value={min}
           onChange={(e) => ustawMin(e.target.value)}
-          className="px-3 py-2 rounded-lg text-white border"
+          className="w-full px-4 py-3 rounded-lg border text-white bg-slate-800 focus:outline-none"
         />
 
         <input
@@ -46,25 +46,27 @@ export default function LosowanieLiczb() {
           placeholder="Max"
           value={max}
           onChange={(e) => ustawMax(e.target.value)}
-          className="px-3 py-2 rounded-lg text-white border"
+          className="w-full px-4 py-3 rounded-lg border text-white bg-slate-800 focus:outline-none"
         />
+
       </div>
 
       {/* BUTTON */}
       <button
         onClick={losuj}
         disabled={loading}
-        className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl disabled:opacity-50"
+        className="w-full max-w-xs bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl disabled:opacity-50"
       >
         {loading ? 'Losowanie...' : 'LOSUJ LICZBĘ'}
       </button>
 
       {/* WYNIK */}
       {wynik !== null && (
-        <div className="text-2xl text-white font-bold">
-          Wynik: {wynik}
+        <div className="text-2xl font-bold text-white">
+          🎲 {wynik}
         </div>
       )}
+
     </div>
   );
 }
