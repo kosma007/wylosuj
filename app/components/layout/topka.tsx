@@ -21,6 +21,7 @@ export default function TopMenu() {
           <Link href="/kostka">Kostka</Link>
           <Link href="/lotto">Lotto</Link>
         <Link href="/losowanie">Losowanie liczby</Link>
+                <Link href="/drabinka">Drabinka drużynowa</Link>
         </div>
 
         {/* MOBILE BUTTON */}
