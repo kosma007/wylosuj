@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/layout/footer";
 import Topka from "./components/layout/topka";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,19 +33,21 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1519475430616843"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
 
-        {/* HEADER */}
+      <body className="min-h-full flex flex-col">
         <Topka />
 
-        {/* CONTENT */}
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
-        {/* FOOTER */}
         <Footer />
-
       </body>
     </html>
   );
