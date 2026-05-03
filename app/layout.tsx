@@ -41,6 +41,9 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
+        <script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1519475430616843"
+  crossOrigin="anonymous"></script>
       </head>
 
       <body className="min-h-full flex flex-col">
